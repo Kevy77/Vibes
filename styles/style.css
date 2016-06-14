@@ -1,3 +1,159 @@
-*{
-color:red;
+html{
+  font-size: 100%;
+  font-family: Helvetica, 'Raleway',sans-serif;
+  color: white;
+  background: #7398AD;
+}
+.no-padding > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+.no-padding {
+    padding-right:0;
+    padding-left:0;
+}
+.left,.right{
+  width: 20%;
+  height: 100vh;
+  background-color: #1C1C25;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+main.full_page{
+  background-color: #7398AD;
+  height: 100vh;
+  float: left;
+  width: 60%;
+  padding: 0 50PX;
+}
+header{
+  position: relative;
+  z-index: 10;
+  background-color: #23232C;
+  width: 100%;
+}
+.logo__home{
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    width: 17%;
+    right: 50%;
+    transform: translate(50%);
+}
+.clearBoth{
+  clear: both;
+}
+.hamburger{
+  color: #fff;
+  float: left;
+  line-height: 5;
+  outline: none;
+}
+img{
+      max-width: 100%;
+}
+.id_name{
+  color: white;
+  text-align: center;
+}
+.border{
+  border-right: 1px solid #95989A;
+}
+.follower,.tracks{
+  color:#95989A;
+  text-align: center;
+}
+.follower::after{
+  content: 'followers';
+  display:block;
+  height:1em;
+}
+.tracks::after{
+  content: 'tracks';
+  display:block;
+  height:1em;
+}
+.navbar_profile ul li{
+  list-style: none;
+  text-align: center;
+  color: white;
+  margin: 20px 0px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #95989A;
+  padding: 20px 0px;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: #23232C;
+  margin-left: 80px;
+}
+.cover{
+  max-width: 100%;
+  border: 3px solid #23232C;
+  border-radius: 50%;
+}
+.sound,.artist{
+  line-height: 1;
+  color: white;
+  text-align: center;
+}
+.artist{
+  margin-top: 5px;
+}
+.hover_ap{
+  background: rgba(35, 35, 44, 0.72);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  width: 100%;
+  display:none;
+}
+.image_cover{
+  position: relative;
+}
+.equalize{
+  width: 158px;
+  margin: 0 auto;
+  display: block;
+}
+.heart{
+    display: block;
+    width: 84px;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+.image_cover:hover .hover_ap{
+  display:block;
+}
+.cover_right{
+  max-width: 100%;
+  margin: 20px;
+  border: 9px solid;
+  position: relative;
+}
+.infos_cover{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.51);
+}
+p.suggest{
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.suggest_box{
+
 }
