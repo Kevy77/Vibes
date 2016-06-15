@@ -31,6 +31,8 @@ $idUserSession = $_SESSION['idUserSession'];
      <input type="checkbox" name="electro" />
      <label for="rock">rock</label>
      <input type="checkbox" name="rock" />
+     <label for="icone">fichier JPG </label><br />
+     <input type="file" name="icone" id="icone" /><br />
      <input type="submit" name="submit" value="Envoyer" />
 </form>
 

@@ -16,7 +16,7 @@ if (empty($donnees['idUser']))
 {
 $sql = "INSERT INTO userListe (idUser,firstname,lastname,email) VALUES    ('".$idUserSession."','".$firstUserSession."','".$lastUserSession."','".$mailUserSession."')";
 if ($conn->query($sql) === TRUE) {
-    echo "base creer avec succes";
+    //echo "base creer avec succes";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -24,8 +24,12 @@ if ($conn->query($sql) === TRUE) {
 
 else
 {
-  echo "deja connecté";
+  //echo "deja connecté";
+
 }
+
+echo "<script type='text/javascript'>document.location.replace('pageAcceuil.php');</script>";
+
 
 
 

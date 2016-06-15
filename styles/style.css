@@ -233,3 +233,30 @@ p.suggest {
   width: 60%;
 margin: 0 auto;
 }
+
+.cover{
+      border-radius: 50%;
+}
+
+.ccHeart{
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+border: none;
+background-color: transparent;
+background-image:url("../images/coupCoeur.png");
+background-repeat: no-repeat;
+background-position: center;
+background-color: blue;
+
+
+}
+
+.ccForme{
+    margin-bottom: 100px;
+}
+.AAA{
+  display: none;
+}
