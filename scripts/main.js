@@ -1,0 +1,14 @@
+$(document).ready(function(){
+  $(".search_bar").hide();
+  $("aside.left").hide();
+  $('#search').click(function(e){
+          e.preventDefault();
+          $(".search_bar").fadeToggle(600);
+      });
+  $('.hamburger').click(function(e){
+          e.preventDefault();
+          $(".full_page").toggleClass('slide');
+          $(".hover_ap").toggleClass('all__');
+          $("aside.left").fadeToggle(600);
+      });
+});
