@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Création Web</title>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/hamburgers.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="mainpage">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <button class="hamburger hamburger--squeeze" type="button">
+                        <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <img src="images/logo.png" alt="" class="logo__home">
+                    <div class="clearBoth"></div>
+                    <img id="search" src="images/search.png" alt="">
+                </div>
+            </div>
+            <div class="search_bar">
+                <div class="container">
+                    <input type="text" placeholder="Recherche...">
+                </div>
+            </div>
+        </header>
+        <aside class="left">
+            <div class="container-fluid no-padding">
+                <div class="col-md-12">
+                    <img src="images/profile_picture.png" alt="">
+                    <p class="id_name">YANN STEPHANT</p>
+                    <div class="col-md-6 border">
+                        <p class="follower">360</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="tracks">12</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar_profile">
+                <ul>
+                    <li>Profil</li>
+                    <li>Coup de coeur</li>
+                    <li>Nouveautés</li>
+                    <li>Artiste</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="full_page">
+            <h1 style="text-align:center;">Paramètres</h1>
+            <div class="container">
+                <div class="form_upload">
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Prénom">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="100000"><br> PHOTO :
+                        <input type="file" name="photo">
+                        <br>
+                        <input type="submit" value="modifier">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <aside class="right">
+            <div class="cover_right">
+                <img src="images/cover.png" alt="cover">
+                <div class="infos_cover">Shaka Ponk - loco da</div>
+            </div>
+            <ul class="like_panel">
+                <li><img src="images/like.png" alt=""></li>
+                <li><img src="images/coupCoeur.png" alt=""></li>
+                <li><img src="images/unlike.png" alt=""></li>
+            </ul>
+            <div class="clearBoth"></div>
+            <div class="suggest_box">
+                <p class="suggest">Suggestion</p>
+                <img src="images/cover.png" alt="cover" class="cover_right_small">
+            </div>
+            <ul class="playlist">
+                <li>Blacklisted</li>
+                <li>My name is stain</li>
+                <li>Puta loca</li>
+                <li>Palabra mi amor</li>
+            </ul>
+        </aside>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

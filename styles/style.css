@@ -224,6 +224,7 @@ p.suggest {
 .suggest_box {}
 .form_upload input{
   width: 60%;
+  margin: 20px 0;
 }
 .form_upload label{
   float: left;
