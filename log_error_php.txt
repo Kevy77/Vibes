@@ -1,0 +1,192 @@
+[19-May-2016 22:13:01 Europe/Berlin] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in /Applications/MAMP/htdocs/vibes/index.php on line 10
+[19-May-2016 22:17:04 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 18
+[19-May-2016 22:17:04 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 18
+[19-May-2016 22:17:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'FacebookSesssion' not found in /Applications/MAMP/htdocs/vibes/index.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 23
+[19-May-2016 22:19:33 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:19:33 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:19:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://localhos...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:20:37 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:20:37 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:20:37 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://www.info...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:22:05 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:22:05 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:22:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://www.info...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:22:11 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:22:11 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:22:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://www.info...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:24:51 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:24:51 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:24:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://infowebm...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:25:40 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:25:40 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:25:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://localhos...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:26:17 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:26:17 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:26:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, string given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct('http://www.info...')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:27:17 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:27:17 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:27:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, none given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:27:21 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:27:21 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:27:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Facebook\Helpers\FacebookRedirectLoginHelper::__construct() must be an instance of Facebook\Authentication\OAuth2Client, none given, called in /Applications/MAMP/htdocs/vibes/index.php on line 24 and defined in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php:75
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Helpers\FacebookRedirectLoginHelper->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Helpers/FacebookRedirectLoginHelper.php on line 75
+[19-May-2016 22:32:46 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:32:46 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:32:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\FacebookSession' not found in /Applications/MAMP/htdocs/vibes/index.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 23
+[19-May-2016 22:33:25 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:33:25 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:33:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\FacebookSession' not found in /Applications/MAMP/htdocs/vibes/index.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 23
+[19-May-2016 22:34:07 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:34:07 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[19-May-2016 22:34:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'FacebookSession' not found in /Applications/MAMP/htdocs/vibes/index.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 23
+[20-May-2016 08:48:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\Facebook' not found in /Applications/MAMP/htdocs/vibes/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 16
+[20-May-2016 08:50:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\Facebook' not found in /Applications/MAMP/htdocs/vibes/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 16
+[20-May-2016 08:50:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\Facebook' not found in /Applications/MAMP/htdocs/vibes/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 16
+[20-May-2016 08:50:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\Facebook' not found in /Applications/MAMP/htdocs/vibes/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 16
+[20-May-2016 08:50:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\Facebook' not found in /Applications/MAMP/htdocs/vibes/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 16
+[20-May-2016 08:51:34 Europe/Berlin] PHP Warning:  require_once(src/Facebook/autoload.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/vibes/index.php on line 14
+[20-May-2016 08:51:34 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'src/Facebook/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.0/lib/php') in /Applications/MAMP/htdocs/vibes/index.php on line 14
+[20-May-2016 08:51:57 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:00:15 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:01:30 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(25): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:02:10 Europe/Berlin] PHP Warning:  require_once(/Applications/MAMP/htdocs/vibes/facebook-sdk-v5/autoload.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/vibes/index.php on line 15
+[20-May-2016 09:02:10 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required '/Applications/MAMP/htdocs/vibes/facebook-sdk-v5/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.0/lib/php') in /Applications/MAMP/htdocs/vibes/index.php on line 15
+[20-May-2016 09:02:25 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(25): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:04:14 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(25): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:07:20 Europe/Berlin] PHP Warning:  require_once(/Applications/MAMP/htdocs/vibesvendor/autoload.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:07:20 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required '/Applications/MAMP/htdocs/vibesvendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.0/lib/php') in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:08:01 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 20
+[20-May-2016 09:08:01 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/vibes/index.php:2) in /Applications/MAMP/htdocs/vibes/index.php on line 20
+[20-May-2016 09:08:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Facebook\FacebookSession' not found in /Applications/MAMP/htdocs/vibes/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 26
+[20-May-2016 09:08:24 Europe/Berlin] PHP Warning:  require_once(vendor/Facebook/autoload.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:08:24 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'vendor/Facebook/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.0/lib/php') in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:08:41 Europe/Berlin] PHP Warning:  require_once(src/Facebook/autoload.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:08:41 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'src/Facebook/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.0/lib/php') in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:08:51 Europe/Berlin] PHP Warning:  require_once(vedor/src/Facebook/autoload.php): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:08:51 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'vedor/src/Facebook/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.0/lib/php') in /Applications/MAMP/htdocs/vibes/index.php on line 17
+[20-May-2016 09:09:18 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:23:50 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:30:12 Europe/Berlin] PHP Notice:  Undefined index: app_id in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 138
+[20-May-2016 09:30:12 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 09:32:36 Europe/Berlin] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookSDKException: Required "app_id" key not supplied in config and could not find fallback environment variable "FACEBOOK_APP_ID" in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php:139
+Stack trace:
+#0 /Applications/MAMP/htdocs/vibes/index.php(24): Facebook\Facebook->__construct(Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/vendor/facebook/php-sdk-v4/src/Facebook/Facebook.php on line 139
+[20-May-2016 18:53:29 Europe/Berlin] PHP Notice:  Undefined variable: loginUrl in /Applications/MAMP/htdocs/vibes/index.php on line 30
+[20-May-2016 18:53:35 Europe/Berlin] PHP Notice:  Undefined variable: loginUrl in /Applications/MAMP/htdocs/vibes/index.php on line 30
+[20-May-2016 18:53:37 Europe/Berlin] PHP Notice:  Undefined variable: loginUrl in /Applications/MAMP/htdocs/vibes/index.php on line 30
+[20-May-2016 18:53:37 Europe/Berlin] PHP Notice:  Undefined variable: loginUrl in /Applications/MAMP/htdocs/vibes/index.php on line 30
+[20-May-2016 18:53:37 Europe/Berlin] PHP Notice:  Undefined variable: loginUrl in /Applications/MAMP/htdocs/vibes/index.php on line 30
+[20-May-2016 18:54:17 Europe/Berlin] PHP Notice:  Undefined variable: helper in /Applications/MAMP/htdocs/vibes/index.php on line 28
+[20-May-2016 18:54:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getLoginUrl() on unknown in /Applications/MAMP/htdocs/vibes/index.php:28
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 28
+[20-May-2016 18:55:10 Europe/Berlin] PHP Notice:  Undefined variable: helper in /Applications/MAMP/htdocs/vibes/index.php on line 24
+[20-May-2016 18:55:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getAccessToken() on unknown in /Applications/MAMP/htdocs/vibes/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 24
+[20-May-2016 18:55:11 Europe/Berlin] PHP Notice:  Undefined variable: helper in /Applications/MAMP/htdocs/vibes/index.php on line 24
+[20-May-2016 18:55:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getAccessToken() on unknown in /Applications/MAMP/htdocs/vibes/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/vibes/index.php on line 24

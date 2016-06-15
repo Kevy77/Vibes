@@ -1,0 +1,14 @@
+{
+    "name": "beno/fbconnect",
+    "authors": [
+        {
+            "name": "beno",
+            "email": "alexbenoliel@gmail.com"
+        }
+    ],
+
+    "require" : {
+        "facebook/php-sdk-v4" : "~5.0"
+    }
+
+}
