@@ -8,6 +8,7 @@ $firstUserSession = $_SESSION['firstUserSession'];
 $lastUserSession = $_SESSION['lastUserSession'];
 $mailUserSession = $_SESSION['mailUserSession'];
 $reponseNew = mysql_query ("SELECT musique.idUser,musique.cheminMusique,musique.idMusique,musique.nomMusique,musique.icone,userListe.firstname,userListe.lastname FROM musique , userListe  WHERE userListe.idUser=musique.idUser");
+$reponseP = mysql_query ("SELECT imageUser FROM userListe WHERE idUser='".$idUserSession."'");
 ?>
 
 <!DOCTYPE html>
@@ -51,8 +52,27 @@ $reponseNew = mysql_query ("SELECT musique.idUser,musique.cheminMusique,musique.
     <aside class="left">
       <div class="container-fluid no-padding">
         <div class="col-md-12">
-          <img src="images/profile_picture.png" alt="">
-          <p class="id_name">YANN STEPHANT</p>
+
+          <?php
+          while ($donneesP = mysql_fetch_array($reponseP)) // On boucle pour afficher toutes les données et on met toutes données dans un tableau
+          {
+          ?>
+          <?php
+          if (empty($donneesP['imageUser']))
+          {
+            $srcCheminAvatar = "images/default/avatar.jpg" ;
+          }
+          else{
+          $srcCheminAvatar = $donneesP['imageUser'];
+        }
+        ?>
+          <div id="avatarUserDiv">
+          <img src="<?= $srcCheminAvatar ?>" class="avatarUser"/></br>
+          </div>
+          <p class="id_name"><?php echo $firstUserSession," " , $lastUserSession; ?></p>
+          <?php
+          }
+          ?>
           <div class="col-md-6 border">
             <p class="follower">360</p>
           </div>
