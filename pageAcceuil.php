@@ -2,7 +2,8 @@
 require("config.php");
 include("/index.php");
 session_start();
-
+$accessToken = $_SESSION['accessToken'];
+if (isset($_SESSION['facebook_access_token'])) {
 $idUserSession = $_SESSION['idUserSession'];
 $firstUserSession = $_SESSION['firstUserSession'];
 $lastUserSession = $_SESSION['lastUserSession'];
@@ -170,5 +171,12 @@ $reponseFo = mysql_query ("SELECT nbFollow,nbTracks FROM userListe WHERE idUser=
   <script src="scripts/bootstrap.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
+<?php
+}
+else
+{
+echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
 
+}
+?>
 </html>

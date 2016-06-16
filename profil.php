@@ -116,7 +116,7 @@ while ($donneesF = mysql_fetch_array($reponseF)) // On boucle pour afficher tout
 
 </body>
 </html>
-
+<a href="http://algo-team.hkcreativity.com/logOut.php">log out</a>
 <?php
 mysql_close(); // On oubli pas de déconnecter la base de données
 ?>
