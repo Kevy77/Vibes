@@ -104,6 +104,7 @@ if ($conn->query($sql) === TRUE) {
 else if ($resultat) {
   echo "Transfert réussi";
 $sql = "INSERT INTO musique (idUser,idMusique,cheminMusique,rock,electro,reggae,nomMusique) VALUES    ('".$idUserSession."','".$idMusique."','".$nom."','".$choixRock."','".$choixelectro."','".$choixReggae."','".$titreUser."')";
+$sql = "UPDATE userListe SET nbTracks = nbTracks + 1 WHERE idUser='".$idUserSession."'";
 
 if ($conn->query($sql) === TRUE) {
     echo "base creer avec succes";

@@ -20,6 +20,7 @@ $idUserFollow = $_POST['idUserFollow'];
 
 <?php
 $sql = "INSERT INTO follow (idFollower,idUser) VALUES    ('".$idUserFollow."','".$idUserSession."')";
+$sql = "UPDATE userListe SET nbFollow = nbFollow + 1 WHERE idUser='".$idUserFollow."'";
 if ($conn->query($sql) === TRUE) {
     echo "base creer avec succes";
 } else {

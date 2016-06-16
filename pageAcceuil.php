@@ -9,6 +9,7 @@ $lastUserSession = $_SESSION['lastUserSession'];
 $mailUserSession = $_SESSION['mailUserSession'];
 $reponseNew = mysql_query ("SELECT musique.idUser,musique.cheminMusique,musique.idMusique,musique.nomMusique,musique.icone,userListe.firstname,userListe.lastname FROM musique , userListe  WHERE userListe.idUser=musique.idUser");
 $reponseP = mysql_query ("SELECT imageUser FROM userListe WHERE idUser='".$idUserSession."'");
+$reponseFo = mysql_query ("SELECT nbFollow,nbTracks FROM userListe WHERE idUser='".$idUserSession."'");
 ?>
 
 <!DOCTYPE html>
@@ -73,12 +74,24 @@ $reponseP = mysql_query ("SELECT imageUser FROM userListe WHERE idUser='".$idUse
           <?php
           }
           ?>
-          <div class="col-md-6 border">
-            <p class="follower">360</p>
-          </div>
-          <div class="col-md-6">
-            <p class="tracks">12</p>
-          </div>
+
+          <?php
+          while ($donneesFo = mysql_fetch_array($reponseFo)) // On boucle pour afficher toutes les données et on met toutes données dans un tableau
+          {
+          ?>
+            <?php
+            $nbFollow = $donneesFo['nbFollow'];
+            $nbTracks = $donneesFo['nbTracks'];
+            ?>
+            <div class="col-md-6 border">
+              <p class="follower"><?php echo $nbFollow; ?></p>
+            </div>
+            <div class="col-md-6">
+              <p class="tracks"><?php echo $nbTracks; ?></p>
+            </div>
+          <?php
+          }
+          ?>
         </div>
       </div>
       <nav class="navbar_profile">
