@@ -1,8 +1,8 @@
-html {
+html, body {
     font-size: 100%;
     font-family: Helvetica, 'Raleway', sans-serif;
-    color: white;
-    background: #7398AD;
+    color: #888889;
+    background: #1C1C25;
 }
 .no-padding> [class*='col-'] {
     padding-right: 0;
@@ -14,7 +14,7 @@ html {
 }
 .left, .right {
     width: 20%;
-    background-color: #1C1C25;
+    background-color: #23232C;
     height: 148vh;
     overflow: hidden;
 }
@@ -44,18 +44,18 @@ header .container {
     outline: none;
 }
 main.full_page {
-    background-color: #7398AD;
+    background-color: #1C1C25;
     height: 100vh;
     float: left;
     width: 80%;
     padding: 0 50PX;
 }
-.slide{
-  width: 60% !important;
-  transition-duration: 0.6s;
+.slide {
+    width: 60% !important;
+    transition-duration: 0.6s;
 }
-.all__{
-  width: 100% !important;
+.all__ {
+    width: 100% !important;
 }
 header {
     position: relative;
@@ -119,8 +119,9 @@ ul, ol {
     padding: 0;
 }
 h1 {
-    color: #23232C;
+    color: #888889;
     margin-left: 80px;
+    text-align: center;
 }
 .cover {
     max-width: 100%;
@@ -128,19 +129,18 @@ h1 {
     border-radius: 50%;
 }
 ::-webkit-input-placeholder {
-   padding: 0 20px;
+    padding: 0 20px;
 }
-
-:-moz-placeholder { /* Firefox 18- */
-   padding: 0 20px;
+:-moz-placeholder {
+    /* Firefox 18- */
+    padding: 0 20px;
 }
-
-::-moz-placeholder {  /* Firefox 19+ */
-   padding: 0 20px;
+::-moz-placeholder {
+    /* Firefox 19+ */
+    padding: 0 20px;
 }
-
 :-ms-input-placeholder {
-   padding: 0 20px;
+    padding: 0 20px;
 }
 .cover_right_small {
     max-width: 100%;
@@ -181,7 +181,7 @@ ul.playlist li {
     top: 0;
     bottom: 0;
     border-radius: 50%;
-    width: 100%;
+    width: 92%;
     display: none;
 }
 .image_cover {
@@ -223,54 +223,100 @@ p.suggest {
     border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
 .suggest_box {}
-.form_upload input{
-  width: 60%;
-  margin: 20px 0;
+.form_upload input {
+    width: 60%;
+    margin: 20px 0;
 }
-.form_upload label{
-  float: left;
+.form_upload label {
+    float: left;
 }
-.form_upload{
-  width: 60%;
-margin: 0 auto;
+.form_upload {
+    width: 60%;
+    margin: 0 auto;
 }
-
-.cover{
-      border-radius: 50%;
+.cover {
+    border-radius: 50%;
 }
-
-.ccHeart{
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  padding: 0;
-border: none;
-background-color: transparent;
-background-image:url("../images/coupCoeur.png");
-background-repeat: no-repeat;
-background-position: bottom;
-
-
-
+.ccHeart {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/coupCoeur.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
-.hover_ap form{
-  display: inline-block;
-  background-color: transparent;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  background-color: transparent;
-  margin-top: -70px;
+.hover_ap form {
+    display: inline-block;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: transparent;
+    margin-top: -70px;
 }
-
-.formCoeur{
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
+.formCoeur {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
 }
-.AAA{
-  display: none;
+.AAA {
+    display: none;
+}
+.profile {
+    float: left;
+    width: 48%;
+}
+.infos_follow p {
+    text-align: left;
+}
+.infos_follow {
+    padding: 30px 0;
+    border-right: 2px solid #333334;
+}
+.tracks, .follower {
+    float: left;
+    margin-right: 30px;
+    color: #888889;
+    font-size: 1.8rem;
+}
+.description_box {
+    padding: 30px 10px;
+    color: #888889;
+}
+.description_box img {
+    float: right;
+    width: 12%;
+}
+.profile_user {
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid #333333;
+    padding: 20px 88px;
+}
+.image_fb {
+    float: left;
+}
+.unlike_nb,.like_nb{
+  width: 50%;
+    position: absolute;
+    z-index: 90;
+    top:67px;
+}
+.unlike_nb{
+  right: 0;
+}
+.like_nb{
+  left: 0;
+}
+.description_box i{
+  float: right;
+    font-size: 28px;
+    margin-top: 16px;
+    color: white;
 }
 
 .avatarUser{
