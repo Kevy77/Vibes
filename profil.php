@@ -14,7 +14,7 @@ $mailUserSession = $_SESSION['mailUserSession'];
 <?php
 $reponseP = mysql_query ("SELECT imageUser FROM userListe WHERE idUser='".$idUserSession."'");
 $reponse = mysql_query ("SELECT cheminMusique,idMusique,nomMusique FROM musique WHERE idUser='".$idUserSession."'");
-$reponseCC = mysql_query ("SELECT coupDeCoeur.idArtiste, musique.cheminMusique , musique.nomMusique , userListe.firstname FROM coupDeCoeur, musique , userListe WHERE coupDeCoeur.IdUser = '".$idUserSession."' AND musique.idMusique = coupDeCoeur.idMusique AND coupDeCoeur.idArtiste = userListe.idUser");
+$reponseCC = mysql_query ("SELECT musique.cheminMusique, musique.nomMusique, userListe.firstname FROM coupDeCoeur, musique, userListe WHERE coupDeCoeur.idUser = '".$idUserSession."' AND coupDeCoeur.idMusique = musique.idMusique AND userListe.idUser = coupDeCoeur.idArtiste ");
 $reponseF = mysql_query ("SELECT userListe.firstname, userListe.lastname FROM userListe, follow WHERE follow.idUser = '".$idUserSession."' AND userListe.idUser = follow.idFollower");
 
 ?>

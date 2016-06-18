@@ -2,15 +2,17 @@
 require("config.php");
 include("/index.php");
 session_start();
+
+
 $accessToken = $_SESSION['accessToken'];
 if (isset($_SESSION['facebook_access_token'])) {
 $idUserSession = $_SESSION['idUserSession'];
 $firstUserSession = $_SESSION['firstUserSession'];
 $lastUserSession = $_SESSION['lastUserSession'];
 $mailUserSession = $_SESSION['mailUserSession'];
-$reponseNew = mysql_query ("SELECT musique.idUser,musique.cheminMusique,musique.idMusique,musique.nomMusique,musique.icone,userListe.firstname,userListe.lastname FROM musique , userListe  WHERE userListe.idUser=musique.idUser");
 $reponseP = mysql_query ("SELECT imageUser FROM userListe WHERE idUser='".$idUserSession."'");
 $reponseFo = mysql_query ("SELECT nbFollow,nbTracks FROM userListe WHERE idUser='".$idUserSession."'");
+$reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser");
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +42,7 @@ $reponseFo = mysql_query ("SELECT nbFollow,nbTracks FROM userListe WHERE idUser=
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <img src="images/logo.png" alt="" class="logo__home">
+          <img src="images/logoBlanc.png" alt="" class="logo__home">
           <div class="clearBoth"></div>
           <img id="search" src="images/search.png" alt="">
         </div>

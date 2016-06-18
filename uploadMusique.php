@@ -3,7 +3,6 @@ require("config.php");
 include("/index.php");
 session_start();
 
-
 $idUserSession = $_SESSION['idUserSession'];
 $firstUserSession = $_SESSION['firstUserSession'];
 $lastUserSession = $_SESSION['lastUserSession'];
@@ -19,7 +18,7 @@ mkdir('pochette/'.$idUserSession, 0777);
 
 ?>
 <?php
-$titreImage = "avatar";
+$titreImage = $_POST['titre'];
 
 
 $_FILES['icone']['name'];     //Le nom original du fichier, comme sur le disque du visiteur (exemple : mon_icone.png).
@@ -93,6 +92,13 @@ $nom = "musique/{$idUserSession}/{$idUserSession}{$titreUser}.{$extension_upload
 $resultat = move_uploaded_file($_FILES['musique']['tmp_name'],$nom);
 if ($resultatIcone) {
   echo "Transfert réussi";
+
+$sql = "UPDATE userListe SET nbTracks = nbTracks + 1 WHERE idUser='".$idUserSession."'";
+if ($conn->query($sql) === TRUE) {
+    echo "base creer avec succes";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 $sql = "INSERT INTO musique (idUser,idMusique,cheminMusique,rock,electro,reggae,nomMusique,icone) VALUES    ('".$idUserSession."','".$idMusique."','".$nom."','".$choixRock."','".$choixelectro."','".$choixReggae."','".$titreUser."','".$nomIcone."')";
 
 if ($conn->query($sql) === TRUE) {
@@ -103,8 +109,15 @@ if ($conn->query($sql) === TRUE) {
 }
 else if ($resultat) {
   echo "Transfert réussi";
-$sql = "INSERT INTO musique (idUser,idMusique,cheminMusique,rock,electro,reggae,nomMusique) VALUES    ('".$idUserSession."','".$idMusique."','".$nom."','".$choixRock."','".$choixelectro."','".$choixReggae."','".$titreUser."')";
+
 $sql = "UPDATE userListe SET nbTracks = nbTracks + 1 WHERE idUser='".$idUserSession."'";
+$sql = "UPDATE userListe SET nbTracks = nbTracks + 1 WHERE idUser='".$idUserSession."'";
+if ($conn->query($sql) === TRUE) {
+    echo "base creer avec succes";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$sql = "INSERT INTO musique (idUser,idMusique,cheminMusique,rock,electro,reggae,nomMusique) VALUES    ('".$idUserSession."','".$idMusique."','".$nom."','".$choixRock."','".$choixelectro."','".$choixReggae."','".$titreUser."')";
 
 if ($conn->query($sql) === TRUE) {
     echo "base creer avec succes";
@@ -112,5 +125,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 }
+
+
 
 ?>
