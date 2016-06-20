@@ -112,10 +112,10 @@ if (isset($_SESSION['facebook_access_token'])) {
         </div>
         <nav class="navbar_profile">
           <ul>
-            <li>Profil</li>
-            <li>Coup de coeur</li>
-            <li>Nouveautés</li>
-            <li>Artiste</li>
+            <li><a href="pageAcceuil.php">Acceuil</a></li>
+            <li><a href="pageProfil.php">Profil</a></li>
+            <li><a href="upload.php">Upload</a></li>
+            <li><a href="parametres.php">Parametre</a></li>
           </ul>
         </nav>
       </aside>
@@ -161,8 +161,8 @@ if (isset($_SESSION['facebook_access_token'])) {
           <div class="col-md-6 description_box">
             <p>Tempore quo primis auspiciis in mundan fulgorem surgeret victura dum erunt homa, ut augeretur sublimibus incrementis, fo Virtus convenit atque Fortu
             </p>
-            <img src="images/cloud.png" alt="">
-            <img src="images/param.png" alt="">
+            <a href="upload.php"><img src="images/cloud.png" alt="upload"></a>
+            <a href="parametres.php"><img src="images/param.png" alt="parametres"></a>
             <i id="heart_btn" class="fa fa-heart" aria-hidden="true"></i>
             <i id="follow_btn"class="fa fa-users" aria-hidden="true"></i>
             <i id="home_btn"class="fa fa-home" aria-hidden="true"></i>

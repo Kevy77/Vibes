@@ -299,6 +299,7 @@ p.suggest {
 }
 .image_fb {
     float: left;
+
 }
 .unlike_nb,.like_nb{
   width: 50%;
@@ -332,6 +333,29 @@ p.suggest {
   position: relative;
 }
 
+#avatarUserDivProfil{
+
+  background-color: #064955;
+border-radius: 50%;
+float: left;
+width: 25%;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+margin-right: 10%;
+
+}
+
+#avatarUserDivFollow{
+  background-color: #064955;
+  float: left;
+  width: 15%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10%;
+}
+
 #avatarUserDiv:before{
   content: "";
 	display: block;
@@ -345,4 +369,9 @@ p.suggest {
 	left: 0;
 	bottom: 0;
 	right: 0;
+}
+
+.navbar_profile ul li a{
+  color : #95989A;
+  text-decoration: none;
 }

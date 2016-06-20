@@ -12,7 +12,21 @@ $lastUserSession = $_SESSION['lastUserSession'];
 $mailUserSession = $_SESSION['mailUserSession'];
 $reponseP = mysql_query ("SELECT imageUser FROM userListe WHERE idUser='".$idUserSession."'");
 $reponseFo = mysql_query ("SELECT nbFollow,nbTracks FROM userListe WHERE idUser='".$idUserSession."'");
-$reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser");
+if(isset($_POST['reggae'])){
+$reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser AND musique.reggae='1'");
+}
+else if(isset($_POST['rock'])){
+  $reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser AND musique.rock='1'");
+}
+else if(isset($_POST['electro'])){
+  $reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser AND musique.electro='1'");
+}
+else if(isset($_POST['ALL'])){
+  $reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser");
+}
+else{
+  $reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , musique.nomMusique , userListe.firstname , musique.icone FROM musique , userListe WHERE musique.idUser = userListe.idUser");
+}
 ?>
 
 <!DOCTYPE html>
@@ -99,19 +113,45 @@ $reponseNew = mysql_query ("SELECT musique.idMusique , musique.cheminMusique , m
       </div>
       <nav class="navbar_profile">
         <ul>
-          <li>Profil</li>
-          <li>Coup de coeur</li>
-          <li>Nouveautés</li>
-          <li>Artiste</li>
+          <li><a href="pageAcceuil.php">Acceuil</a></li>
+          <li><a href="pageProfil.php">Profil</a></li>
+          <li><a href="upload.php">Upload</a></li>
+          <li><a href="parametres.php">Parametre</a></li>
         </ul>
       </nav>
     </aside>
     <main class="full_page">
+      <div class="col-md-12" style="margin-top:20px;">
+        <div class="col-md-3">
+          <img src="images/second.png" style="width:100% max-width:100%; height:auto;" alt="">
+          <form action="pageAcceuil.php" method="post" style="position: absolute;z-index: 70;top: 50%;right: 50%;">
+          <input type="submit" value="ALL" name="ALL" style="background-color: transparent; border: none;"/>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <img src="images/first.png" style="width:100% max-width:100%; height:auto;" alt="">
+          <form action="pageAcceuil.php" method="post" style="position: absolute;z-index: 70;top: 50%;right: 50%;">
+          <input type="submit" value="Electro" name="electro" style="background-color: transparent; border: none;"/>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <img src="images/third.png" style="width:100% max-width:100%; height:auto;" alt="">
+          <form action="pageAcceuil.php" method="post" style="position: absolute;z-index: 70;top: 50%;right: 50%;">
+          <input type="submit" value="Reggae" name="reggae" style="background-color: transparent; border: none;"/>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <img src="images/last.png" style="width:100% max-width:100%; height:auto;" alt="">
+          <form action="pageAcceuil.php" method="post" style="position: absolute;z-index: 70;top: 50%;right: 50%;">
+          <input type="submit" value="Rock" name="rock" style="background-color: transparent; border: none;"/>
+          </form>
+        </div>
+      </div>
       <div class="col-md-3">
         <div class="style first"></div>
       </div>
 
-      <h1>Nouveautés</h1>
+    <h1>Parcourir</h1>
       <?php
       while ($donneesNew = mysql_fetch_array($reponseNew)) // On boucle pour afficher toutes les données et on met toutes données dans un tableau
       {  ?>
